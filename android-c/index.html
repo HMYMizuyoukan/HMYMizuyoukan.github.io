@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Music Player</title>
+</head>
+<body>
+  <h1>音楽</h1>
+  <audio id="music" src="music.mp3"></audio>
+  <script>
+    // 現在の日時を取得
+    var now = new Date();
+    // 設定日時を取得(7時)
+    var target = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 19, 40, 0, 0);
+    // 設定時間(ms)
+    var time = target - now;
+
+    // setTimeout関数
+    setTimeout(function(){
+      // 音楽を再生
+      document.getElementById("music").play();
+    }, time);
+  </script>
+</body>
+</html>
