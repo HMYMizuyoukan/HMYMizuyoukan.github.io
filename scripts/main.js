@@ -22,7 +22,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'ひとくち水ようかんのサイト、 ' + myName;
+    myHeading.innerHTML = 'MM's site、 ' + myName;
   }
 }
 
